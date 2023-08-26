@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# For Api enviornmental variable
+.env
+.env.development
