@@ -3,9 +3,13 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "./components/about/About";
 =======
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+=======
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+>>>>>>> f557b07 (Install additional dependancies.)
 import About from "./About";
 >>>>>>> 38fe21e (Add About Route.)
 
