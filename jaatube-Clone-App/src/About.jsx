@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import Alex from "./assets/alex.jpeg";
 import Jalal from "./assets/jalal.png";
-import Aisha from "./Users/aishakleemoff/10-2/Mod-3/Mod-3-projects/jaaTube-Clone-Project/jaatube-Clone-App/src/assets/aisha.jpeg";
+import Aisha from "./assets/aisha.jpeg";
 
 export default function About() {
   return (
@@ -18,6 +18,38 @@ export default function About() {
             three claamates using our knowledge of design and React.
           </p>
         </section>
+        <ul className="team-Cards">
+          <div display>
+            <li className="team-card">
+              <h3>Jalal Jonaid</h3>
+              <img src={Jalal} alt="Jalal" height="250px" />
+              <a href="https://github.com/JalalJonaid"></a>
+              <p>
+                Jalal Jonaid has studied Computer Science, Digital Marketing and
+                he is also a Full Stack Developer{" "}
+              </p>
+            </li>
+            <li className="team-card">
+              <h3>Alexander Tsiklidis</h3>
+              <img src={Alex} alt="Alex" height="250px" />
+              <a href="https://github.com/AlexanderTsiklidis"></a>
+              <p>
+                Alexander Tsiklidis is a Software developer with an interest in
+                improving world infrastructure.
+              </p>
+            </li>
+            <li className="team-card">
+              <h3>Aisha Kleemoff</h3>
+              <img src={Aisha} alt="Aisha" height="250px" />
+              <a href="https://github.com/AishaCKleemoff"></a>
+              <p>
+                Aisha Kleemoff is a Software Engineer, Fellow at the Pursuit
+                Fellowship! When Aisha is not programming, she loves to bake and
+                crochet!
+              </p>
+            </li>
+          </div>
+        </ul>
       </div>
     </>
   );
