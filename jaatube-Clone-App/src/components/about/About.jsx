@@ -1,4 +1,4 @@
-import React from "react";
+gitimport React from "react";
 import "./About.css";
 import Alex from "./assets/alex.jpeg";
 import Jalal from "./assets/jalal.png";
