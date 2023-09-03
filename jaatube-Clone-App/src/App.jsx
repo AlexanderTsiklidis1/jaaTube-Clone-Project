@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
+import Nav from "./Components/common/Nav";
 import "./App.css";
 
-import About from "./About";
+import About from "./Components/about/About";
+
 
 function App() {
   const [count, setCount] = useState(0);
