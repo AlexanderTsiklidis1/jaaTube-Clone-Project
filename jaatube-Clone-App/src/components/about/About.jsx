@@ -1,8 +1,10 @@
-gitimport React from "react";
+// gitimport React from "react";
+import React from "react";
 import "./About.css";
-import Alex from "./assets/alex.jpeg";
-import Jalal from "./assets/jalal.png";
-import Aisha from "./assets/aisha.jpeg";
+
+// import Alex from "./assets/alex.jpeg";
+// import Jalal from "./assets/jalal.png";
+// import Aisha from "./assets/aisha.jpeg";
 
 export default function About() {
   return (
@@ -22,7 +24,7 @@ export default function About() {
           <div display>
             <li className="team-card">
               <h3>Jalal Jonaid</h3>
-              <img src={Jalal} alt="Jalal" height="250px" />
+              <img src={"./assets/jalal.png"} alt="Jalal" height="250px" />
               <a href="https://github.com/JalalJonaid"></a>
               <p>
                 Jalal Jonaid has studied Computer Science, Digital Marketing and
@@ -31,7 +33,7 @@ export default function About() {
             </li>
             <li className="team-card">
               <h3>Alexander Tsiklidis</h3>
-              <img src={Alex} alt="Alex" height="250px" />
+              <img src={"./assets/alex.jpeg"} alt="Alex" height="250px" />
               <a href="https://github.com/AlexanderTsiklidis"></a>
               <p>
                 Alexander Tsiklidis is a Software developer with an interest in
@@ -40,7 +42,7 @@ export default function About() {
             </li>
             <li className="team-card">
               <h3>Aisha Kleemoff</h3>
-              <img src={Aisha} alt="Aisha" height="250px" />
+              <img src={"./assets/aisha.jpeg"} alt="Aisha" height="250px" />
               <a href="https://github.com/AishaCKleemoff"></a>
               <p>
                 Aisha Kleemoff is a Software Engineer, Fellow at the Pursuit
