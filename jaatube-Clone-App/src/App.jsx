@@ -12,6 +12,7 @@ function App() {
     <>
       <div>
         <Router>
+          <Nav />
           <Routes>
             <Route path="/about" element={<About />} />
           </Routes>
