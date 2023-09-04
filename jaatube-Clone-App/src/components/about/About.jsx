@@ -4,7 +4,7 @@ import "./About.css";
 
 // import Alex from "./assets/alex.jpeg";
 // import Jalal from "./assets/jalal.png";
-// import Aisha from "./assets/aisha.jpeg";
+import Aisha from "../../assets/aisha.jpeg";
 
 export default function About() {
   return (
@@ -33,7 +33,7 @@ export default function About() {
             </li>
             <li className="team-card">
               <h3>Alexander Tsiklidis</h3>
-              <img src={"./assets/alex.jpeg"} alt="Alex" height="250px" />
+              <img src="./assets/alex.jpeg" alt="Alex" height="250px" />
               <a href="https://github.com/AlexanderTsiklidis"></a>
               <p>
                 Alexander Tsiklidis is a Software developer with an interest in
@@ -42,7 +42,7 @@ export default function About() {
             </li>
             <li className="team-card">
               <h3>Aisha Kleemoff</h3>
-              <img src={"./assets/aisha.jpeg"} alt="Aisha" height="250px" />
+              <img src={Aisha} alt="Aisha" height="250px" />
               <a href="https://github.com/AishaCKleemoff"></a>
               <p>
                 Aisha Kleemoff is a Software Engineer, Fellow at the Pursuit
