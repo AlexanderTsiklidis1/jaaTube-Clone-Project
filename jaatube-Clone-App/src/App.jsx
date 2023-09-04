@@ -5,9 +5,7 @@ import "./App.css";
 
 import About from "./Components/about/About";
 
-
 function App() {
-
   return (
     <>
       <div>
@@ -19,8 +17,8 @@ function App() {
         </Router>
 
         <p>Alexander, Aisha, Jalal</p>
-        <h2>Delete it ALL</h2>
-        <p>Hopefully this pushes</p>
+        <h2>JAATube</h2>
+        <p>Our YouTube Clone APP</p>
       </div>
     </>
   );
