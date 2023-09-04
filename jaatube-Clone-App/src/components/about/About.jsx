@@ -1,9 +1,11 @@
 import "./About.css";
+
 import { Link } from "react-router-dom";
 
 import Alex from "../../assets/alex.jpeg";
 import Jalal from "../../assets/jalal.png";
 import Aisha from "../../assets/aisha.jpeg";
+
 
 export default function About() {
   return (
