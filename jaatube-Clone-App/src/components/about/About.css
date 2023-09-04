@@ -1,3 +1,48 @@
+* {
+  background-color: rgb(212, 207, 209);
+}
+
 .aboutContainer {
   border: 30px solid black;
+}
+
+.team-card {
+  list-style: none;
+  text-decoration: none;
+}
+
+.team-card-jj {
+  border: 2px solid rgb(41, 165, 41);
+  padding: 15px;
+  list-style: none;
+}
+
+.jjbtn {
+  background-color: green;
+  color: greenyellow;
+}
+
+.team-card-at {
+  border: 2px solid rgb(67, 31, 226);
+  padding: 15px;
+  list-style: none;
+}
+
+.atbtn {
+  color: blue;
+  background-color: cornflowerblue;
+}
+
+.team-card-ak {
+  border: 2px solid rgba(219, 72, 99, 0.382);
+  padding: 15px;
+  list-style: none;
+}
+
+.akbtn {
+  background-color: rgb(232, 165, 165);
+}
+
+.link {
+  color: rosybrown;
 }
