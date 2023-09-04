@@ -49,7 +49,6 @@ export default function About() {
               <h3>Aisha Kleemoff</h3>
               <img src={Aisha} alt="Aisha" height="250px" />
               <button className="akbtn">
-                {" "}
                 <Link to="https://github.com/AishaCKleemoff">GitHub</Link>
               </button>
               <p>
