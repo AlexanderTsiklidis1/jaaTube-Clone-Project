@@ -1,9 +1,11 @@
 import "./About.css";
-import Link from "react-router-dom";
 
-import Alex from "./assets/alex.jpeg";
-import Jalal from "./assets/jalal.png";
-import Aisha from "./assets/aisha.jpeg";
+import { Link } from "react-router-dom";
+
+import Alex from "../../assets/alex.jpeg";
+import Jalal from "../../assets/jalal.png";
+import Aisha from "../../assets/aisha.jpeg";
+
 
 export default function About() {
   return (
@@ -21,28 +23,36 @@ export default function About() {
         </section>
         <ul className="team-Cards">
           <div display>
-            <li className="team-card">
+            <li className="team-card-jj">
               <h3>Jalal Jonaid</h3>
-              <img src={Jalal} alt="Jalal" height="250px" />
-              <a href="https://github.com/JalalJonaid"></a>
+              <img className="jPic" src={Jalal} alt="Jalal" height="250px" />
+              <button className="jjbtn">
+                <Link className="link" to={"https://github.com/JalalJonaid"}>
+                  GitHub
+                </Link>
+              </button>
               <p>
                 Jalal Jonaid has studied Computer Science, Digital Marketing and
                 he is also a Full Stack Developer{" "}
               </p>
             </li>
-            <li className="team-card">
+            <li className="team-card-at">
               <h3>Alexander Tsiklidis</h3>
               <img src={Alex} alt="Alex" height="250px" />
-              <a href="https://github.com/AlexanderTsiklidis"></a>
+              <button className="atbtn">
+                <Link to={"https://github.com/AlexanderTsiklidis"}>GitHub</Link>
+              </button>
               <p>
                 Alexander Tsiklidis is a Software developer with an interest in
                 improving world infrastructure.
               </p>
             </li>
-            <li className="team-card">
+            <li className="team-card-ak">
               <h3>Aisha Kleemoff</h3>
               <img src={Aisha} alt="Aisha" height="250px" />
-              <a href="https://github.com/AishaCKleemoff"></a>
+              <button className="akbtn">
+                <Link to="https://github.com/AishaCKleemoff">GitHub</Link>
+              </button>
               <p>
                 Aisha Kleemoff is a Software Engineer, Fellow at the Pursuit
                 Fellowship! When Aisha is not programming, she loves to bake and
