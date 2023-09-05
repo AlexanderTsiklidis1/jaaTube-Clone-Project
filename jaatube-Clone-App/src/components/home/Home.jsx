@@ -4,15 +4,16 @@ import VideoListing from "./VideoListing";
 import "./Home.css";
 
 export default function Home() {
-
-  const [videos, setVideos] = useState ({});
-  
+const [searchQ, setSearchQ] = useState("");
+useEffect
+  const [videos, setVideos] = useState ([]);
     useEffect(() => {
       getAllVideos()
       .then((videosJSON) => {
-        setVideos(videosJSON)
+        setVideos(videosJSON.items)
       })
     },[])
+    
     const youtubeArray = videos.items
     console.log(videos)
     console.log(videos.items)
@@ -21,9 +22,9 @@ export default function Home() {
           <section className="videos-index-wrapper">
             <h2></h2>
             <section className="videos-index">
-             {/* { youtubeArray.map((video) => {
+             { videos.map((video) => {
               return <VideoListing video = {video} key = {video.id}/>
-            })} */}
+            })}
             
             </section>
           </section>
