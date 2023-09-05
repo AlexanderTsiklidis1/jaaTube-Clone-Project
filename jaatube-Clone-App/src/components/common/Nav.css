@@ -1,14 +1,27 @@
+Nav {
+    color: red;
+}
 header {
     align-items: center;
     display: flex;
-    padding: 25px 15% 35px;
+    padding: 25px ;
     background-color: red;
-    
-  }
+}
+a {
+    background-color : red;
+}
+
+h1 span {
+    background-color: red
+}
   
+header li {
+    background-color: red;
+}
   
   header nav {
-    width: 50%;
+    width: 30%;
+    background-color: red;
   }
   
   header h1 {
@@ -20,29 +33,25 @@ header {
   header h1 span {
     font-weight: 300;
     color: white;
-
-  }
+}
   
-  header h1 a {
-    color: var(--light);
-    text-decoration: none;
-  }
+  
   
   header ul {
     list-style: none;
     padding: 0;
+    background-color: red;
   }
   
   header ul li {
     display: inline-block;
-    font-family: var(--primary-font);
     font-size: 18px;
     padding: 0 25px;
+    color: white;
   }
   
   header ul li a {
-    color: var(--light);
-    border-bottom: 2px solid var(--light);
+    color: white;
     font-weight: 500;
     padding-bottom: 5px;
     text-decoration: none;

@@ -5,7 +5,7 @@ import "./Home.css";
 
 export default function Home() {
 
-  const [videos, setVideos] = useState ([]);
+  const [videos, setVideos] = useState ({});
   
     useEffect(() => {
       getAllVideos()
@@ -14,14 +14,13 @@ export default function Home() {
       })
     },[])
     const youtubeArray = videos.items
+    console.log(videos)
     console.log(videos.items)
     return (
         <div>
           <section className="videos-index-wrapper">
-            <h2>Videos</h2>
+            <h2></h2>
             <section className="videos-index">
-             {console.log(videos)}
-             
              {/* { youtubeArray.map((video) => {
               return <VideoListing video = {video} key = {video.id}/>
             })} */}
