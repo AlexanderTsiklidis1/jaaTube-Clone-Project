@@ -9,7 +9,7 @@ import About from "./Components/about/About";
 function App() {
   return (
     <>
-      <div>
+      <div className= "wrapper">
         <Router>
           <Nav />
           <Routes>

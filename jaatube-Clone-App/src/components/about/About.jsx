@@ -40,7 +40,7 @@ export default function About() {
               <h3>Alexander Tsiklidis</h3>
               <img src={Alex} alt="Alex" height="250px" />
               <button className="atbtn">
-                <Link to={"https://github.com/AlexanderTsiklidis"}>GitHub</Link>
+                <Link to={"https://github.com/AlexanderTsiklidis1"}>GitHub</Link>
               </button>
               <p>
                 Alexander Tsiklidis is a Software developer with an interest in
