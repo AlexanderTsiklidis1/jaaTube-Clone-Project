@@ -17,9 +17,6 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
         </Router>
-
-        
-        <h2>JAATube</h2>
         <p>Our YouTube Clone APP</p>
       </div>
     </>

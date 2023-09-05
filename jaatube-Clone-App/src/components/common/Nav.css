@@ -1,11 +1,12 @@
 header {
     align-items: center;
-    background: var(--primary);
     display: flex;
     padding: 25px 15% 35px;
+    background-color: red;
+    
   }
   
-  header article,
+  
   header nav {
     width: 50%;
   }
@@ -18,6 +19,8 @@ header {
   
   header h1 span {
     font-weight: 300;
+    color: white;
+
   }
   
   header h1 a {
