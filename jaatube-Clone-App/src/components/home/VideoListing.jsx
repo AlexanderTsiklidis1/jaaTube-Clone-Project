@@ -7,10 +7,11 @@ export default function VideoListing({ video }) {
             <h3 className="title">
                 {/* using the show prop here */}
                 {/* the <Link /> is for a USER to click on */}
-                <Link to={`/video/${video.id}`}>{video.title}</Link>
+                <Link to={`/video/${video.id}`}>{video.title}
+                <img src={video.snippet.thumbnails.default.url} alt="thumbnail" />
+                </Link>
             </h3>
-            <img src={video.snippet.thumbnails.default.url} alt="thumbnail" />
-            <p className="description">{video.snippet.description}</p>
+           <p className="description">{video.snippet.description}</p>
         </article>
     );
   }
