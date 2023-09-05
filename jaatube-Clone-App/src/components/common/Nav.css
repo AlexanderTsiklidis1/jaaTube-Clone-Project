@@ -1,0 +1,64 @@
+Nav {
+    color: red;
+}
+header {
+    align-items: center;
+    display: flex;
+    padding: 25px ;
+    background-color: red;
+}
+a {
+    background-color : red;
+}
+
+h1 span {
+    background-color: red
+}
+  
+header li {
+    background-color: red;
+}
+  
+  header nav {
+    width: 30%;
+    background-color: red;
+  }
+  
+  header h1 {
+    height: auto;
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header h1 span {
+    font-weight: 300;
+    color: white;
+}
+  
+  
+  
+  header ul {
+    list-style: none;
+    padding: 0;
+    background-color: red;
+  }
+  
+  header ul li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 25px;
+    color: white;
+  }
+  
+  header ul li a {
+    color: white;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-decoration: none;
+  }
+  
+  header ul li a:hover {
+    color: var(--dark);
+    border-bottom: 2px solid var(--dark);
+  }
+  

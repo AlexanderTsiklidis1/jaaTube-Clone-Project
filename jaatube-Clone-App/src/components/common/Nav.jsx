@@ -7,9 +7,7 @@ export default function Nav() {
     <header>
       <article>
         <h1>
-          <Link to="/">
-            Jaa<span>Tube</span>
-          </Link>
+         <span>JaaTube</span>
         </h1>
       </article>
       <nav>
