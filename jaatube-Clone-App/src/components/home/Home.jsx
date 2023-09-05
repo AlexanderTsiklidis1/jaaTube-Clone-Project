@@ -22,9 +22,9 @@ export default function Home() {
             <section className="videos-index">
              {console.log(videos)}
              
-             { youtubeArray.map((video) => {
+             {/* { youtubeArray.map((video) => {
               return <VideoListing video = {video} key = {video.id}/>
-            })}
+            })} */}
             
             </section>
           </section>
