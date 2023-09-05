@@ -18,7 +18,7 @@ function App() {
           </Routes>
         </Router>
 
-        <p>Alexander, Aisha, Jalal</p>
+        
         <h2>JAATube</h2>
         <p>Our YouTube Clone APP</p>
       </div>
