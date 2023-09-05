@@ -9,14 +9,11 @@ export default function VideoListing({ video }) {
           {/* the <Link /> is for a USER to click on */}
           <Link to={`/shows/${video.id}`}>{video.title}</Link>
         </h3>
-        <p className="description">{video.description}</p>
+        <p className="description">{video.snippet.description}</p>
         <aside className="thumbnail">
           <p>
             <span>Listed Categories:</span>
-            {video.thumbnails}
-          </p>
-          <p>
-            <span>Duration:</span> {show.duration}
+            <img src={video.snippet.thumbnails.default.url} alt="thumbnail" />
           </p>
         </aside>
       </article>
