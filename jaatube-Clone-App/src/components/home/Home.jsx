@@ -1,16 +1,20 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link, useParams, useNavigate } from "react-router-dom";
-import "/Home.css";
+import { getAllVideos } from "../../api/fetch";
+//import "/Home.css";
 
 export default function Home() {
-  const [video, setVideo] = useState({});
-  const { id } = useParams();
 
-  const navigate = useNavigate();
+    const [videos, setVideos] = useState ([]);
   
+    useEffect(() => {
+      getAllVideos()
+      .then((videosJSON) => {
+        setVideos(videosJSON)
+      })
+    },[])
+
     return (
-        <div>
-      <article className="video"></article>
-    </div>
+        <div></div>
     )
 }
