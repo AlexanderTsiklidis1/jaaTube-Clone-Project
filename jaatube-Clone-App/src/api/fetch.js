@@ -17,7 +17,7 @@ export function getAllVideos() {
 }
 
 export function getOneVideo(id) {
-    return fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}&q=&type=video&part=snippet/video/${id}`).then(res => res.json())
+    return fetch(`https://www.googleapis.com/youtube/v3/videos?key=${URL}&type=video&part=snippet&id=${id}`).then(res => res.json())
   }
 
 export function searchVideos(searchQ) {

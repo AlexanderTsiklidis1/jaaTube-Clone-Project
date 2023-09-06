@@ -13,7 +13,7 @@ export default function commentForm() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        createComment()
+        setComment()
     }
 
     function handleTextChange(event) {
