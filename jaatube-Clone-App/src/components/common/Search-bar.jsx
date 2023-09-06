@@ -11,7 +11,7 @@ import { getAllVideos } from "../../api/fetch";
 
 
 
-export default function videosIndex() {
+export default function Searc() {
     const [loading, setLoadingError] = useState(false);
     const [videos, setVideos] = useState ([]);
     const [searchQ, setSearchQ] = useState()

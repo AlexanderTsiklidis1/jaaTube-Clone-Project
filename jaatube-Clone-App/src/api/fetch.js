@@ -17,9 +17,9 @@ export function getAllVideos() {
 }
 
 export function getOneVideo(id) {
-    return fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}&q=type=video&part=snippet/video/${id}`).then(res => res.json())
+    return fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}&q=&type=video&part=snippet/video/${id}`).then(res => res.json())
   }
 
 export function searchVideos(searchQ) {
-    return fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}&q=type=video&part=snippet/video/&maxResults=8`).then(res => res.json())
+    return fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}&q=${searchQ}&type=video&part=snippet/video/&maxResults=8`).then(res => res.json())
 }
