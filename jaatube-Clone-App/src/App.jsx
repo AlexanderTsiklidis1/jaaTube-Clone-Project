@@ -12,12 +12,15 @@ function App() {
       <div className= "wrapper">
         <Router>
           <Nav />
-          <Home/>
           <Routes>
+            <Route path="/"  element ={<Home/>} />
+            <Route path="/home" element = {<Home/>} />
+            <Route path="/videoShow" element= {<VideoShow/>} />
             <Route path="/about" element={<About />} />
+
           </Routes>
         </Router>
-        <p>Our YouTube Clone APP</p>
+        
       </div>
     </>
   );
