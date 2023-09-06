@@ -4,10 +4,10 @@ import VideoListing from "./VideoListing";
 import "./Home.css";
 const URL = import.meta.env.VITE_BASE_API_URL
 export default function Home() {
-
 const [searchQ, setSearchQ] = useState("");
 const [videos, setVideos] = useState ([]);
-   function handleSearch() {
+   
+  function handleSearch() {
     if (searchQ.trim() !== "") {
       searchVideos(searchQ)
         .then((result) => {
