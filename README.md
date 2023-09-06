@@ -16,4 +16,4 @@ We spent much time and effort working on this App, so we do hope you enjoy the A
 Collaborators: Alexander Tsiklidis, Aisha Kleemoff, Jalal Jonaid
 
 
-Bug : Video Show page
+Bug : Video Show page, ideal styling (will be completed shortly)

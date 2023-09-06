@@ -5,12 +5,9 @@ import "./Home.css";
 const URL = import.meta.env.VITE_BASE_API_URL
 export default function Home() {
 
-  const [searchQ, setSearchQ] = useState("");
-  const [videos, setVideos] = useState ([]);
-  const [isEmptySearch, setIsEmptySearch] = useState(false);
-  
-  
-  function handleSearch() {
+const [searchQ, setSearchQ] = useState("");
+const [videos, setVideos] = useState ([]);
+   function handleSearch() {
     if (searchQ.trim() !== "") {
       searchVideos(searchQ)
         .then((result) => {
