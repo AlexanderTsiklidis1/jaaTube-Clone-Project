@@ -14,3 +14,6 @@ In this app we are able to
 We spent much time and effort working on this App, so we do hope you enjoy the App as well as its functionality, and that you remain patient with any bugs you may encounter along the way
 
 Collaborators: Alexander Tsiklidis, Aisha Kleemoff, Jalal Jonaid
+
+
+Bug : Video Show page, ideal styling (will be completed shortly)

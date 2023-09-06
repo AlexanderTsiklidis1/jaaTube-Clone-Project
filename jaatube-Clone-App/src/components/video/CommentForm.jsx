@@ -1,9 +1,8 @@
 import { useState  } from "react";
-import { createShow } from "../../api/fetch";
 import { useNavigate } from "react-router-dom";
 import "./CommentForm.css";
 
-export default function commentForm() {
+export  function commentForm() {
     const [comment, setComment] = useState({
         name: "",
         comment: "",
