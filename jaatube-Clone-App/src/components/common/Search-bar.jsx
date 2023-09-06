@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ErrorMessage from "../errors/ErrorMessage";
 import { getAllVideos } from "../../api/fetch";
+impor { useNavigate } "from react-router-dom";
 
 
 // export function getAllVideos() {
