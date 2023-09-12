@@ -2,7 +2,7 @@ import { useState, useEffect, useParams, useNavigate } from "react"
 import { getAllVideos, searchVideos } from "../../api/fetch";
 import VideoListing from "./VideoListing";
 import "./Home.css";
-const URL = import.meta.env.VITE_BASE_API_URL
+const KEY = import.meta.env.VITE_BASE_API_KEY
 export default function Home() {
 const [searchQ, setSearchQ] = useState("");
 const [videos, setVideos] = useState ([]);
@@ -21,11 +21,11 @@ const [videos, setVideos] = useState ([]);
     }
   }
   useEffect(() => {
-    getAllVideos()
+    getAllVideos(8)
     .then((videosJSON) => {
       setVideos(videosJSON.items)
     })
-  },[searchQ, URL])
+  },[searchQ, KEY])
 
 const handleInputChange = (e) => {
   setSearchQ(e.target.value)
