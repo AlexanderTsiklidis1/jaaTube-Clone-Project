@@ -16,14 +16,32 @@ const _BASE_URL = `https://youtube.googleapis.com/youtube/v3/search?&type=video&
 
 export function getAllVideos(videoQuantity) {
     debugger
-    return fetch(`${_BASE_URL}&key=${KEY}&maxResults=${videoQuantity}`).then(res => res.json()) 
+    return fetch(`${_BASE_URL}&maxResults=${videoQuantity}`).then(res => res.json()) 
 
   
 }
-
-export function getOneVideo(id) {
-    return fetch(`https://www.googleapis.com/youtube/v3/videos?key=${KEY}&type=video&part=snippet&id=${id}`).then(res => res.json())
+// &type=video&part=snippet&id=${id}`
+export function getOneVideo(id, videoQuantity) {
+    const endpoint =`&etag=${id}`
+    const url = `${_BASE_URL}&maxResults=${videoQuantity}${endpoint}`
+    return fetch(url)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      if (data.items && Array.isArray(data.items)) {
+        return data.items;
+      } 
+    })
+    .catch((error) => {
+      console.error("Fetch error:", error);
+      throw error;
+    });
   }
+  
 
 export function searchVideos(searchQ) {
     return fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${KEY}&q=${searchQ}&type=video&part=snippet/video/&maxResults=8`).then(res => res.json())

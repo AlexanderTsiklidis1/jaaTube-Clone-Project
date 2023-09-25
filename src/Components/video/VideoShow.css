@@ -1,0 +1,65 @@
+/* Add this CSS to your VideoShow.css or equivalent stylesheet */
+
+/* Styling for the main container */
+.container {
+    margin-top: 20px;
+  }
+  
+  /* Styling for the video player */
+  .videoShow {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .videoName {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .videoImage img {
+    max-width: 100%;
+  }
+  
+  /* Styling for the comment section */
+  .form-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .commentTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form input and textarea */
+  .form-control {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Style the "Add Comment" button */
+  .btn-primary {
+    background-color: #ff0000; /* Red color similar to YouTube's primary buttons */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  /* Style comments */
+  .mb-2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Style the commenter's name */
+  strong {
+    font-weight: bold;
+  }
+  
+  /* Add custom styles for responsiveness as needed */
+  
+  @media (max-width: 768px) {
+    /* Add responsive styles here */
+  }

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Nav from "./Components/common/Nav";
 import "./App.css";
 import Home from "./Components/home/Home";
-// import VideoShow from "./Components/video/VideoShow";
+import VideoShow from "./Components/video/VideoShow";
 import About from "./Components/about/About";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/"  element ={<Home/>} />
             <Route path="/home" element = {<Home/>} />
-            {/* <Route path="/VideoShow" element= {<VideoShow/>} /> */}
+            <Route path="/VideoShow/:etag" element = {<VideoShow/>} />
             <Route path="/about" element={<About />} />
 
           </Routes>
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App;
+
