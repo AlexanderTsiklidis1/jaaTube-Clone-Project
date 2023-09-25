@@ -15,7 +15,6 @@ We spent much time and effort working on this App, so we do hope you enjoy the A
 
 Collaborators: Alexander Tsiklidis, Aisha Kleemoff, Jalal Jonaid
 
-Deployed on Netlify (https://fascinating-hamster-e318a4.netlify.app)
+Deployed on Netlify (https://gregarious-rolypoly-0a79cc.netlify.app)
 
-
-Bug : Video Show page, ideal styling (will be completed shortly)
+Bug : Video Show page at time does not show correct selected data
